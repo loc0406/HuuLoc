@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--doi mau dong txt-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+                $('div h1').css('background-color', 'yellow');
+                return false;
+            
+        });
+
+    </script>
+	
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $("input[type=button]").click(function(){
+                $("#sampleTable").append("<tr><td><select><option>email</option></select></td><td><input type="text" name="email"></td><td>Comments</td><td><input type="text" name="comment"></td></tr>")
+            });
+        });
+    </script>
+</head>
+<body>
+    
+	<h1>abc</h1>
+		<div>
+			<h1>div-1</h1>
+			<h1>div-2</h1>
+		</div>
+	<h1>xyz</h1>
+	<a href ="https://www.google.com.vn/">Google</a>
+	<table id="sampleTable" border="1">
+        <tr>
+            <td>
+				<select>
+					<option>email</option>
+				</select>
+            </td>
+            <td>
+				<input type="text" >
+            </td>
+			<td>
+				Comments
+			</td>
+			<td>
+				<input type="text" >
+            </td>
+        </tr>        
+    </table>
+    <br />
+	<input type="button" onclick="" value="Add Row" />
+</body>
+</html>
